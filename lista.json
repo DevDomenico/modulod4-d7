@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "nome": "Laptop ABC",
+      "nome": "prova Laptop ABC",
       "descrizione": "Un laptop sottile e leggero con processore veloce e display nitido.",
       "prezzo": 899.99,
       "immagine": "https://picsum.photos/200"
@@ -26,5 +26,21 @@
       "descrizione": "Cuffie senza fili con audio ad alta definizione e batteria a lunga durata.",
       "prezzo": 79.99,
       "immagine": "https://picsum.photos/200"
-    }
+    },
+    {
+        "id": 5,
+        "nome": "Cuffie Wireless",
+        "descrizione": "Cuffie senza fili con audio ad alta definizione e batteria a lunga durata.",
+        "prezzo": 79.99,
+        "immagine": "https://picsum.photos/200"
+      }
+    ,
+    {
+        "id": 6,
+        "nome": "Cuffie Wireless",
+        "descrizione": "Cuffie senza fili con audio ad alta definizione e batteria a lunga durata.",
+        "prezzo": 79.99,
+        "immagine": "https://picsum.photos/200"
+      }
+
   ]
