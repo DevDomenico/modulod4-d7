@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "nome": "Smartphone XYZ",
+      "descrizione": "Un potente smartphone con schermo HD e fotocamera di alta qualità.",
+      "prezzo": 399.99,
+      "immagine": "https://picsum.photos/200"
+    },
+    {
+      "id": 2,
+      "nome": "Laptop ABC",
+      "descrizione": "Un laptop sottile e leggero con processore veloce e display nitido.",
+      "prezzo": 899.99,
+      "immagine": "https://picsum.photos/200"
+    },
+    {
+      "id": 3,
+      "nome": "Smart TV 4K",
+      "descrizione": "Una smart TV con risoluzione 4K, streaming integrato e controllo vocale.",
+      "prezzo": 699.99,
+      "immagine": "https://picsum.photos/200"
+    },
+    {
+      "id": 4,
+      "nome": "Cuffie Wireless",
+      "descrizione": "Cuffie senza fili con audio ad alta definizione e batteria a lunga durata.",
+      "prezzo": 79.99,
+      "immagine": "https://picsum.photos/200"
+    }
+  ]
