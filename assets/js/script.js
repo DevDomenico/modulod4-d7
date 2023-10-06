@@ -23,7 +23,7 @@ const stampa = () => {
         card.innerHTML = `
         <img src="${prodotto.imageUrl}" alt="${prodotto.name}">
         <h3>${prodotto.name}</h3>
-        <button  class=' btn btn-success' type="button"> dettagli </button>
+        <button  onclick="dettaglio('${prodotto._id}')"  class=' btn btn-success' type="button"> dettagli </button>
         <p>Prezzo: $${prodotto.price}</p>
             `;
         htmlstampa.appendChild(card);
@@ -31,6 +31,14 @@ const stampa = () => {
      //posta(prodotto) 
     });
    
+
+}
+
+const dettaglio = (prodotto) =>{ 
+
+  
+    window.location.href = '/product.html'+'?id='+prodotto
+
 
 }
 /* const  posta= async (prodotto) => {
@@ -61,4 +69,17 @@ const stampa = () => {
 }*/
 
 window.onload = () => fetchLocalJson();
+
+
+
+
+
+
+
+
+
+;
+
+
+
 
