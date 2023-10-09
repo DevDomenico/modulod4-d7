@@ -1,27 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
+.navbar {
+    background-color: #343a40;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        width: 100vw;
+    > div {
+        width: 100vw !important;
+    }
+}
+
+.navbar-brand {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.form-inline {
+    margin-left: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Applica stili alla classe HTML "small-image" */
+.small-image {
+    max-width: 100px; /* Imposta la larghezza massima desiderata per le immagini */
+    height: auto; /* L'altezza verrà adattata in modo proporzionale */
+    /* Altre regole CSS per le immagini più piccole, se necessario */
+}
+
+
+/* Aggiungi una classe CSS per il container delle card */
+.card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
+/* Applica stili alle card individuali */
 .card {
-    width: calc(33.33% - 20px); 
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
+    width: calc(33.33% - 10px); /* Imposta la larghezza di ogni card per visualizzarne 3 per riga con uno spazio di 10px tra di esse */
+    margin-bottom: 20px; /* Aggiunge un margine inferiore per separare le righe di card */
+    box-sizing: border-box; /* Assicura che il margine non aumenti la larghezza effettiva della card */
 }
 
-.card h3 {
-    margin: 0;
-}
-
-.card p {
-    margin: 10px 0;
+/* Applica stili all'immagine all'interno della card */
+.card img {
+    max-width: 100%; /* Imposta la larghezza massima dell'immagine al 100% della card */
+    height: auto; /* L'altezza verrà adattata in modo proporzionale */
 }

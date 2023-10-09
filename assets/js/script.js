@@ -21,7 +21,7 @@ const stampa = () => {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-        <img src="${prodotto.imageUrl}" alt="${prodotto.name}">
+        <img src="${prodotto.imageUrl}" alt="${prodotto.name}" class='small-image'>
         <h3>${prodotto.name}</h3>
         <button  onclick="dettaglio('${prodotto._id}')"  class=' btn btn-success' type="button"> dettagli </button>
         <p>Prezzo: $${prodotto.price}</p>
