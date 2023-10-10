@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Office - Zungri Tech</title>
+    <link rel="stylesheet" href="assets/css/backoffice.css">
+</head>
+<body>
+    <a href="/">Torna Indietro</a>
+    <div id="backoffice">
+        <h1>Back Office</h1>
+        <h2>Aggiungi un nuovo prodotto</h2>
+        <form id="addProductForm">
+            <input type="text" id="productName" placeholder="Nome del prodotto" required>
+            <input type="text" id="productDescription" placeholder="Descrizione" required>
+            <input type="number" id="productPrice" placeholder="Prezzo" required>
+            <input type="text" id="productBrand" placeholder="Marca" required>
+            
+            <button type="submit">Aggiungi</button>
+            <button id="deleteProduct" type="button">Elimina Prodotto</button>
+        </form>
+        <h2>Modifica o elimina prodotti esistenti</h2>
+        <ul id="productList">
+            <!-- La lista dei prodotti esistenti verrà popolata qui -->
+        </ul>
+    </div>
+    <script src="assets/js/backoffice.js"></script>
+</body>
+</html>

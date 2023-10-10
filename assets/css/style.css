@@ -189,3 +189,27 @@ footer p {
 .card-content button i {
     margin-right: 5px; 
 }
+
+/* Aggiungi un margine superiore al div con la classe "button-container" per separarlo dalla navbar */
+.button-container {
+    margin-top: 20px;
+    text-align: right; /* Allinea il pulsante a destra */
+}
+
+/* Stile del pulsante "Aggiungi Prodotto" */
+#addProductButton {
+    background-color: #f0f0f0; /* Sfondo grigio */
+    color: #fff; /* Testo bianco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #f0f0f0, #d0d0d0); /* Sfondo sfumato */
+    text-decoration: none; /* Rimuovi la sottolineatura del link */
+}
+
+/* Cambio di colore al passaggio del mouse */
+#addProductButton:hover {
+    background-image: linear-gradient(to bottom, #d0d0d0, #f0f0f0); /* Cambia sfondo sfumato al passaggio del mouse */
+}
