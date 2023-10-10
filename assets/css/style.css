@@ -52,11 +52,10 @@ footer p {
     margin: 5px 0;
 }
 
-/* Applica stili alla classe HTML "small-image" */
 .small-image {
-    max-width: 100px; /* Imposta la larghezza massima desiderata per le immagini */
-    height: auto; /* L'altezza verrà adattata in modo proporzionale */
-    /* Altre regole CSS per le immagini più piccole, se necessario */
+    max-width: 100px; 
+    height: auto; 
+   
 }
 
 
@@ -69,13 +68,124 @@ footer p {
 
 /* Applica stili alle card individuali */
 .card {
-    width: calc(33.33% - 10px); /* Imposta la larghezza di ogni card per visualizzarne 3 per riga con uno spazio di 10px tra di esse */
-    margin-bottom: 20px; /* Aggiunge un margine inferiore per separare le righe di card */
-    box-sizing: border-box; /* Assicura che il margine non aumenti la larghezza effettiva della card */
+    width: calc(33.33% - 10px); 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
 }
 
 /* Applica stili all'immagine all'interno della card */
 .card img {
-    max-width: 100%; /* Imposta la larghezza massima dell'immagine al 100% della card */
-    height: auto; /* L'altezza verrà adattata in modo proporzionale */
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Contenitore delle immagini */
+#lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Allinea le immagini orizzontalmente */
+}
+
+/* Stili per le immagini */
+.small-image {
+    max-width: 100px;
+    height: auto;
+    margin: 10px; /* Aggiungi uno spazio tra le immagini */
+}
+
+/* Nuova classe CSS per centrare le immagini */
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Altezza massima per il contenitore */
+}
+/* Contenitore delle immagini */
+#lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Allinea le immagini orizzontalmente */
+}
+
+/* Stili per le immagini */
+.small-image {
+    max-width: 100px;
+    height: auto;
+    margin: 10px 0; /* Aggiungi uno spazio sopra e sotto alle immagini */
+}
+
+/* Nuova classe CSS per centrare le immagini */
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Altezza massima per il contenitore */
+}
+
+/* Stili per i pulsanti */
+.card button {
+    margin-top: 10px; /* Spazio tra il titolo e i pulsanti */
+}
+
+/* Stili per l'icona "Aggiungi al carrello" */
+.card button i {
+    margin-right: 5px; /* Spazio tra l'icona e il testo */
+}
+
+
+/* Contenitore delle immagini */
+#lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Allinea le immagini orizzontalmente */
+}
+
+/* Stili per le card */
+.card {
+    width: calc(33.33% - 10px); /* Larghezza di 33.33% con uno spazio tra le card */
+    margin-bottom: 20px; /* Spazio tra le righe di card */
+    box-sizing: border-box;
+}
+
+/* Stili per il contenitore delle immagini */
+.image-container {
+    max-width: 200px; 
+    height: auto;
+    margin: 0 auto; 
+}
+
+/* Stili per i pulsanti */
+.card button {
+    margin-top: 10px; 
+}
+
+/* Stili per l'icona "Aggiungi al carrello" */
+.card button i {
+    margin-right: 5px; 
+}
+
+/* Stili per le card */
+.card {
+    width: calc(33.33% - 10px); 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Stili per il contenitore delle immagini */
+.image-container {
+    max-width: 200px; 
+    height: auto;
+    margin: 0 auto; 
+}
+
+/* Stili per i pulsanti */
+.card-content button {
+    margin-top: 10px; 
+}
+
+/* Stili per l'icona "Aggiungi al carrello" */
+.card-content button i {
+    margin-right: 5px; 
 }

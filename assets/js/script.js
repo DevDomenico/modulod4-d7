@@ -14,6 +14,14 @@ async function fetchLocalJson() {
         stampa();
     
 }
+// Funzione per centrare le immagini
+const centerImages = () => {
+    const images = document.querySelectorAll('.small-image');
+    images.forEach(image => {
+        image.classList.add('center-image');
+    });
+};
+
 const htmlstampa = document.querySelector('#lista');
 const stampa = () => {
     console.log(lista);
@@ -21,14 +29,15 @@ const stampa = () => {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-        <img src="${prodotto.imageUrl}" alt="${prodotto.name}" class='small-image'>
+        <div class="image-container">
+            <img src="${prodotto.imageUrl}" alt="${prodotto.name}" class='small-image'>
+        </div>
         <h3>${prodotto.name}</h3>
-        <button  onclick="dettaglio('${prodotto._id}')"  class=' btn btn-success' type="button"> dettagli </button>
         <p>Prezzo: $${prodotto.price}</p>
-            `;
+        <button onclick="dettaglio('${prodotto._id}')" class='btn btn-success' type="button">Dettagli</button>
+        <button onclick="addToCart('${prodotto._id}')" class='btn btn-primary'><i class="fas fa-shopping-cart"></i> Aggiungi al carrello</button>
+        `;
         htmlstampa.appendChild(card);
-
-     //posta(prodotto) 
     });
    
 
