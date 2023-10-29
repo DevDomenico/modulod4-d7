@@ -16,7 +16,7 @@ async function fetchLocalJson() {
     const response = await fetch(url, {
         method: 'GET',
         headers: {
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTFjNzFjNmJmNGJlNzAwMThiMWIyMGIiLCJpYXQiOjE2OTY0NDY5NjgsImV4cCI6MTY5NzY1NjU2OH0.po06F_J-Wn1dxcLvY2nmuB9opBnd51xxXCJ0P6XNOic'
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTNkNjMwZTYzZjE1ODAwMTQxMTg0ODUiLCJpYXQiOjE2OTg1MjE4NzAsImV4cCI6MTY5OTczMTQ3MH0.jRiqIJNSmduYcecsZB3WmflohnHIag1tTidLgPB0OwI'
         }
     })
     const data = await response.json();
@@ -25,5 +25,15 @@ async function fetchLocalJson() {
 
 }
 const stampa = (prodotto) => {
-    document.getElementById('risultato').innerHTML = prodotto.name
+    document.getElementById('dettaglio').innerHTML = `
+    <h1>${prodotto.name}</h1>
+    <div class="image-container">
+        <img src="${prodotto.imageUrl}" alt="${prodotto.name}"  width="300px">
+    </div>
+
+    <p>Brand: ${prodotto.brand} </p>
+    <p>${prodotto.description} </p>
+    <p>Prezzo: $${prodotto.price}</p>
+   
+    `;
 }; 
